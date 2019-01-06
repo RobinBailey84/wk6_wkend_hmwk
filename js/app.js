@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const name = event.target.name.value;
     const sport = event.target.sport.value;
     const nationality = event.target.nationality.value;
+    const rating = event.target.rating.value;
 
     const favourites =
     document.querySelector('#favourites')
@@ -31,14 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const sportPara =
     document.createElement('p');
     const nationalityPara = document.createElement('p')
+    const ratingPara = document.createElement('p')
 
     namePara.textContent = name;
     sportPara.textContent = sport;
     nationalityPara.textContent = nationality;
+    ratingPara.textContent = rating;
 
     favouriteDetails.appendChild(namePara);
     favouriteDetails.appendChild(sportPara);
     favouriteDetails.appendChild(nationalityPara);
+    favouriteDetails.appendChild(ratingPara);
 
     favourites.appendChild(favouriteDetails);
 
